@@ -8,6 +8,7 @@ import org.hibernate.classic.Session;
 public class PlayJavaApp {
 
 	public static void main(String[] args) {
+		
 		System.out.println("Hello Playjava");
 		
 		Configuration cfg = new Configuration();
@@ -15,20 +16,24 @@ public class PlayJavaApp {
 		Session session = cfg.buildSessionFactory().openSession();
 		Transaction trxn = session.beginTransaction();
 		
+		Professor p = new Professor();
+		p.setName("DevRavikanth");
+		Subject s = new Subject();
+		s.setSubjectname("java");
 		
-		  Demo d = new Demo();
-		  Demo d1 = new Demo(); 
-		  
-		  d.setDemoname("testdemo");
-		  d.setDatanumber(1234);
-		  session.save(d);
-		  //System.out.println(d);
-		  
+		/*
+		 * Demo d = new Demo(); Demo d1 = new Demo();
+		 * 
+		 * d.setDemoname("testdemo"); d.setDatanumber(1234); session.save(d);
+		 * //System.out.println(d);
+		 * 
+		 * 
+		 * d1.setDemoname("javaDemo"); d1.setDatanumber(12356); session.save(d1);
+		 * //session.merge(d1);
+		 */
+		session.save(p);
+		session.save(s);
 		
-		  d1.setDemoname("javaDemo"); d1.setDatanumber(12356); session.save(d1);
-		  //session.merge(d1);
-		 
-		  
 		 
 		trxn.commit();
 		session.close();
