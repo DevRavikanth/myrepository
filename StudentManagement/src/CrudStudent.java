@@ -1,6 +1,6 @@
 
 public class CrudStudent {
-	
+	//Crud Statements
 	StudentDetails sd ;
 	StudentMarks sm;
 	StudentDatabase sdb;
