@@ -1,12 +1,17 @@
 package com.ydr.playjava;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
 @Entity
-public class Professor {
+public class Professors {
 	
 	@Id
 	@GeneratedValue
@@ -14,14 +19,16 @@ public class Professor {
 	
 	private String name;
 	
-	@OneToOne
-	private Subject subject;
+	@OneToMany
+	private Collection<Subjects> subjects = new ArrayList<Subjects>();
 	
-	public Subject getSubject() {
-		return subject;
+	
+	
+	public Collection<Subjects> getSubjects() {
+		return subjects;
 	}
-	public void setSubject(Subject subject) {
-		this.subject = subject;
+	public void setSubjects(Collection<Subjects> subjects) {
+		this.subjects = subjects;
 	}
 	public int getId() {
 		return id;

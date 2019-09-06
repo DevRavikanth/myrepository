@@ -1,27 +1,32 @@
 package com.ydr.playjava;
 
+import java.util.ArrayList;
+import java.util.Collection;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
+import javax.persistence.OneToMany;
 
 @Entity
-public class Professor {
-	
+public class ProfessorsO2M {
 	@Id
 	@GeneratedValue
 	private int id;
 	
 	private String name;
 	
-	@OneToOne
-	private Subject subject;
+	@OneToMany(mappedBy="prof")
+	private Collection<SubjectsM2O> subjects = new ArrayList<SubjectsM2O>();
 	
-	public Subject getSubject() {
-		return subject;
+	
+	
+
+	public Collection<SubjectsM2O> getSubjects() {
+		return subjects;
 	}
-	public void setSubject(Subject subject) {
-		this.subject = subject;
+	public void setSubjects(Collection<SubjectsM2O> subjects) {
+		this.subjects = subjects;
 	}
 	public int getId() {
 		return id;
