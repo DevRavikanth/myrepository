@@ -1,3 +1,4 @@
+package EqulsAndHashcode;
 import oops.A;
 import oops.B;
 
