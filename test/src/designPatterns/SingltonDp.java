@@ -2,7 +2,7 @@ package designPatterns;
 
 public class SingltonDp {
 
-	static SingltonDp sd = new SingltonDp();
+	static SingltonDp sd = new SingltonDp();//Eager Loading
 	
 	private SingltonDp(){
 	}
