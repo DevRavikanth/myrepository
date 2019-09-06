@@ -1,4 +1,5 @@
-package designPatterns;
+package designPatterns.factory;
+
 public class ShapeFactory {
 	
    //use getShape method to get object of type shape 
