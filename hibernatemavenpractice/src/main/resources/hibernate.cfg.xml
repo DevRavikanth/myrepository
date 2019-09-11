@@ -11,14 +11,14 @@
 		<property name="hibernate.connection.username">root</property>
 		<property name="hibernate.connection.password">root</property>
 		<property name="hibernate.show_sql">true</property>
-		<property name="hbm2ddl.auto">create</property> 
+		<property name="hbm2ddl.auto">update</property> 
 		
 		<mapping class="com.ydr.playjava.ProfessorsO2M" />
 		<mapping class="com.ydr.playjava.SubjectsM2O" />
 		
 		<!--<mapping class="com.ydr.playjava.Professors" />  -->
 		<!-- <mapping class="com.ydr.playjava.Subjects" /> -->
-		<!-- <mapping class="com.ydr.playjava.Demo" />-->
+		<mapping class="com.ydr.playjava.Demo" />
 		<!--<mapping class="com.ydr.playjava.Professor" /> -->
 		<!--<mapping class="com.ydr.playjava.Subject" /> -->
 		<!--<mapping resource="playjava.hbm.xml"/> -->
