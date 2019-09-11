@@ -4,9 +4,12 @@
  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
   
  <hibernate-mapping>  
-  <class name="com.ydr.playjava.Demo" table="demo">  
-    <id name="id">  
-     <generator class="assigned"></generator>  
+ 
+  <class name="com.ydr.playjavaXml.Demo" table="demo">  
+  
+    <id name="id" type = "int">  
+     <generator class="increment"></generator>  
+      <!--  <generator class="assigned"></generator>  -->
     </id>  
             
     <property name="demoname"></property>  

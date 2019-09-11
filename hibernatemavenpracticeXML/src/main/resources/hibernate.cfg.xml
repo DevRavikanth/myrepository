@@ -11,12 +11,13 @@
 		<property name="hibernate.connection.username">root</property>
 		<property name="hibernate.connection.password">root</property>
 		<property name="hibernate.show_sql">true</property>
-		<property name="hbm2ddl.auto">create</property> 
+		<property name="hbm2ddl.auto">update</property> 
 		
 		
 		 <!--  <mapping  class="com.ydr.playjavaXml.Demo" /> this will not work in XMl mapping Configuration-->
 		
-	<mapping resource="com.ydr.playjavaXml.Demo"/>
+	<mapping resource="playjavaXml.hbm.xml"/>
+	
 	</session-factory>
 
 </hibernate-configuration>

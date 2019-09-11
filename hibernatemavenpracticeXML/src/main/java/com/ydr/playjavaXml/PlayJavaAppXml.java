@@ -23,14 +23,14 @@ public class PlayJavaAppXml {
 		  Demo d = new Demo(); 
 		  Demo d1 = new Demo();
 		  
-		  d.setDemoname("testdemo"); 
-		  d.setDatanumber(12); 
+		  d.setDemoname("testdemo1567"); 
+		  d.setDatanumber(12389); 
 		  session.save(d);
 		  //System.out.println(d);
 		  
 		  
-		  d1.setDemoname("javaDemo");
-		  d1.setDatanumber(12); 
+		  d1.setDemoname("javaDemo234");
+		  d1.setDatanumber(123782); 
 		  session.save(d1);
 		  //session.merge(d1);
 		 

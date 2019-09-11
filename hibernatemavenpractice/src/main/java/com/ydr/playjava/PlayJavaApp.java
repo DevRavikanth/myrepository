@@ -20,15 +20,15 @@ public class PlayJavaApp {
 		Transaction trxn = session.beginTransaction();
 		
 		//one to many and many to one maping with out third table
-		/*
-		 * ProfessorsO2M p = new ProfessorsO2M(); p.setName("devravikanth");
-		 * 
-		 * SubjectsM2O s = new SubjectsM2O(); s.setSubjectname("java");
-		 * 
-		 * SubjectsM2O s1 = new SubjectsM2O(); s1.setSubjectname("lahari");
-		 * 
-		 * p.getSubjects().add(s); p.getSubjects().add(s1);
-		 */
+		
+		  ProfessorsO2M p = new ProfessorsO2M(); p.setName("devravikanth");
+		  
+		  SubjectsM2O s = new SubjectsM2O(); s.setSubjectname("java");
+		  
+		  SubjectsM2O s1 = new SubjectsM2O(); s1.setSubjectname("lahari");
+		  
+		  p.getSubjects().add(s); p.getSubjects().add(s1);
+		 
 			 
 		 
 		/*
@@ -37,12 +37,12 @@ public class PlayJavaApp {
 		 * p.setSubjects(al); p.getSubjects();
 		 */
 		  
-		/*
-		 * s.setProf(p); s1.setProf(p);
-		 * 
-		 * session.save(p); session.save(s); session.save(s1);
-		 * 
-		 */
+		
+		  s.setProf(p); s1.setProf(p);
+		  
+		  session.save(p); session.save(s); session.save(s1);
+		  
+		 
 		
 		
 		/* one to many maping with third table
@@ -65,18 +65,7 @@ public class PlayJavaApp {
 		 */
 		/////////////
 		
-		  Demo d = new Demo(); 
-		  Demo d1 = new Demo();
 		  
-		  d.setDemoname("testdemo123"); 
-		  d.setDatanumber(12346); session.save(d);
-		  //System.out.println(d);
-		  
-		  
-		  d1.setDemoname("javaDemo234");
-		  d1.setDatanumber(123565); 
-		  session.save(d1);
-		  //session.merge(d1);
 		 
 		
 		 
