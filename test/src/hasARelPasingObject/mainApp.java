@@ -7,8 +7,8 @@ public class mainApp {
 		//IwantSomeOne is = new IwantSomeOne();
 		ResourceShared rs = new ResourceShared();
 		
-		//IwantSomeOne is = new IwantSomeOne(rs);
-		IwantSomeOne is = new IwantSomeOne();
+		IwantSomeOne is = new IwantSomeOne(rs);
+		IwantSomeOne is1 = new IwantSomeOne();
 		IWantSomeTwo is2 = new IWantSomeTwo(rs);
 		is.callingResorce();
 		is2.callingResorce2();
