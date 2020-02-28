@@ -1,4 +1,4 @@
-package test;
+package testStrings;
 
 final public class TestImmutable{
 	

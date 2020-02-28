@@ -1,4 +1,4 @@
-package test;
+package testStrings;
 
 public class StringTest {
 
